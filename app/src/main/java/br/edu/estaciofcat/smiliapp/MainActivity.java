@@ -18,7 +18,12 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         db teste = new db();
-        teste.testDB();
+        try {
+            teste.conectaBD();
+            Log.w("BLOQUEIO", "METODOO OK ");
+        } catch (Exception e) {
+            Log.w("BLOQUEIO", "NAO FUNCIONOU ERRO " + e);
+        }
     }
 
     /*//Função Voltar para Home

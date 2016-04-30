@@ -1,0 +1,18 @@
+<?php
+$con=mysqli_connect("jdbc:mysql://db4free.net:3306","smili","ads2016","smili");
+
+if (mysqli_connect_errno($con))
+{
+   echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+$username = $_POST['matricula'];
+$result = mysqli_query($con,"SELECT Role FROM Matriculas where
+Username='$username'");
+$row = mysqli_fetch_array($result);
+$data = $row[0];
+
+if($data){
+echo $data;
+}
+mysqli_close($con);
+?>
