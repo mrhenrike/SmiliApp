@@ -7,6 +7,7 @@ import android.support.v4.util.ArrayMap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
 
@@ -57,6 +58,15 @@ public class MainActivity extends Activity {
     // Métodos para busca do banco de dados
     public void matribanco(View view){
 
+    }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)  {
+        if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
+            setContentView(R.layout.activity_main);
+            return true;
+        }
+
+        return super.onKeyDown(keyCode, event);
     }
 
     //Screen Help

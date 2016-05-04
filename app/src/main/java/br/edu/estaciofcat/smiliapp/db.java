@@ -21,15 +21,15 @@ public class db extends Activity {
     private String password;
 
     //-- CRIANDO CONEXOES
-    public static Connection conn;
+    public static Connection conn = null;
     public static Statement stmt;
     public static ResultSet rs;
 
         public  db() {
             driver   = "com.mysql.jdbc.Driver";
-            url      = "jdbc:mysql://localhost:3306/test";
-            user     = "root";
-            password = "";
+            url      = "jdbc:mysql://db4free.net:3306/smili";
+            user     = "smili";
+            password = "ads2016";
         }
 
         public void fechaBD() throws Exception {
@@ -39,7 +39,7 @@ public class db extends Activity {
 
         public boolean conectaBD() throws Exception {
             try {
-                Class.forName(driver);
+                Class.forName(driver).newInstance();
                 Log.w("BLOQUEIO","TUDO OK COM CLASS.FORNAME");
             } catch (Exception e) {
                 Log.w("BLOQUEIO","NAO FUNCIONOU O CLASS.FORNAME");
@@ -68,11 +68,11 @@ public class db extends Activity {
             List<String> lista = new ArrayList<String>();
             try{
                 Log.w("BLOQUEIO","INICIANDO... stmt.executeQuery");
-                rs = stmt.executeQuery("select * from bloqueio order by nm_cli");
+                rs = stmt.executeQuery("select * from Matriculas");
                 Log.w("BLOQUEIO","INICIANDO... while");
                 while (rs.next()) {
-                    lista.add(rs.getString("nm_cli"));
-                    Log.w("BLOQUEIO",rs.getString("nm_cli"));
+                    lista.add(rs.getString("Matriculas"));
+                    Log.w("BLOQUEIO",rs.getString("Matriculas"));
                     //+ " " +rs.getString("nm_cli") + " " + rs.getString("dt_bloqueio"));
                 }
                 Log.w("BLOQUEIO","ACABOU...");

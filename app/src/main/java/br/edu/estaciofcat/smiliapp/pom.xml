@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dependencies>
+    <!-- Núcleo do Hibernate -->
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>4.3.8.Final</version>
+        <scope>compile</scope>
+    </dependency>
+    <!-- Implementação de EntityManager da JPA -->
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-entitymanager</artifactId>
+        <version>4.3.8.Final</version>
+        <scope>compile</scope>
+    </dependency>
+    <!-- Driver JDBC do MySQL -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>5.1.34</version>
+        <scope>compile</scope>
+    </dependency>
+    ...
+</dependencies>
