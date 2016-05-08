@@ -1,21 +1,16 @@
 package br.edu.estaciofcat.smiliapp;
 
-import java.io.Serializable;
-
-/**
- * Created by Dark on 04/05/2016.
- */
-public class Matriculas implements Serializable {
+public class Matriculas{
     private static final long serialVersionUID = 1L;
-    private Integer Matricula;
+    private String Matricula;
     private String Nome;
-    public int getMatricula(){
+    public String getMatricula(){
         return Matricula;
     }
-    public int setMatricula(){
+    public String setMatricula(){
         return Matricula;
     }
-    public String getNome(){
+    public String getNome(String lucas){
         return Nome;
     }
     public String setNome(){
@@ -24,7 +19,9 @@ public class Matriculas implements Serializable {
     public void setNome(String Nome) {
         this.Nome = Nome;
     }
-    public void setNome(Integer Matricula) {
+    public void setMatricula (String Matricula) {
         this.Matricula = Matricula;
     }
+
+
 }

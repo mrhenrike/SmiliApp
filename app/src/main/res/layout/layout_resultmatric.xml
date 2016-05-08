@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg_busca">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bloco:"
+        android:id="@+id/textView3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="353dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sala:"
+        android:id="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="405dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Andar:"
+        android:id="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="380dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/andar"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="65dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sala"
+        android:layout_marginTop="396dp"
+        android:layout_marginLeft="55dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloco"
+        android:layout_marginTop="345dp"
+        android:layout_marginLeft="65dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:background="@drawable/btn_acao_acesso"
+        android:onClick="acao_acessarLayoutBusca"
+        android:text="@string/btn_voltar"
+        android:clickable="true"
+        android:enabled="true"
+        android:textColor="@color/color_text_button"
+        android:textSize="@dimen/textSizeButton"
+        android:layout_below="@+id/sala"
+        android:layout_toRightOf="@+id/bloco"
+        android:layout_toEndOf="@+id/bloco" />
+
+</RelativeLayout>

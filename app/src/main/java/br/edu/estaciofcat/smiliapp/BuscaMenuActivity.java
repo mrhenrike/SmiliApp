@@ -3,7 +3,6 @@ package br.edu.estaciofcat.smiliapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.View;
 
 public class BuscaMenuActivity extends Activity {
@@ -15,7 +14,7 @@ public class BuscaMenuActivity extends Activity {
     }
 
     public void abreBuscaNome(View view) {
-        Intent intent = new Intent(this, BuscaNome.class);
+        Intent intent = new Intent(this, BuscaCPF.class);
         startActivity(intent);
     }
 
@@ -28,13 +27,8 @@ public class BuscaMenuActivity extends Activity {
         Intent intent = new Intent(this, BuscaCurso.class);
         startActivity(intent);
     }
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event)  {
-        if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
-            setContentView(R.layout.activity_main);
-            return true;
-        }
-
-        return super.onKeyDown(keyCode, event);
+    public void voltar(View view) {
+        onBackPressed();
     }
+
 }

@@ -15,31 +15,32 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnBuscaNome"
+        android:id="@+id/btnBuscaCPF"
         android:background="@drawable/btn_acao_busca"
-        android:onClick="acao_BuscarNome"
+        android:onClick="@MainActivity/acao_Buscarcpf"
         android:layout_marginTop="12dp"
         android:layout_below="@+id/logoBusca"
         android:layout_centerHorizontal="true"
-        android:text="@string/busca_nome"
+        android:text="@string/busca_cpf"
         android:clickable="true"
         android:enabled="true"
         android:textColor="@color/color_text_button"
-        android:textSize="@dimen/textSizeButton"/>
+        android:textSize="@dimen/textSizeButton"
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnBuscaMatr"
         android:background="@drawable/btn_acao_busca"
-        android:layout_below="@+id/btnBuscaNome"
-        android:onClick="acao_BuscarMatr"
+        android:layout_below="@+id/btnBuscaCPF"
         android:layout_centerHorizontal="true"
         android:text="@string/busca_matricula"
         android:clickable="true"
         android:enabled="true"
         android:textColor="@color/color_text_button"
-        android:textSize="@dimen/textSizeButton"/>
+        android:textSize="@dimen/textSizeButton"
+        android:onClick="acao_BuscarMatr" />
 
     <Button
         android:layout_width="wrap_content"
