@@ -25,12 +25,12 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/editTextMatricula"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:inputType="number" />
 
     <Button
         android:layout_width="wrap_content"
@@ -44,7 +44,8 @@
         android:enabled="true"
         android:textColor="@color/color_text_button"
         android:textSize="@dimen/textSizeButton"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:onClick="matribanco" />
 
     <Button
         android:layout_width="wrap_content"

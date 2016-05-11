@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg_busca">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:background="@drawable/btn_acao_acesso"
+        android:onClick="acao_acessarLayoutBusca"
+        android:text="@string/btn_voltar"
+        android:clickable="true"
+        android:enabled="true"
+        android:textColor="@color/color_text_button"
+        android:textSize="@dimen/textSizeButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bloco:"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sala:"
+        android:id="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Andar:"
+        android:id="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloco"
+        android:layout_above="@+id/button2"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginBottom="-7dp"
+        android:clickable="false"
+        android:editable="false"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sala"
+        android:layout_above="@+id/textView4"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginBottom="-6dp"
+        android:layout_below="@+id/textView6"
+        android:enabled="false"
+        android:editable="false"
+        android:clickable="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/andar"
+        android:layout_alignLeft="@+id/bloco"
+        android:layout_alignStart="@+id/bloco"
+        android:layout_alignBottom="@+id/textView6"
+        android:clickable="false"
+        android:editable="false"
+        android:enabled="false" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/foto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

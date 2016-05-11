@@ -7,5 +7,5 @@
     <string name="btn_voltar">Back</string>
     <string name="busca_curso">Select Your Course:</string>
     <string name="busca_matricula">Enter With Your ID:</string>
-    <string name="busca_nome">Enter With Your Name:</string>
+    <string name="busca_cpf">Enter With Your CPF:</string>
 </resources>

@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">S.M.I.L.I.</string>
     <string name="busca_matricula">Digite Sua Matrícula:</string>
-    <string name="busca_nome">Digite Seu Nome:</string>
+    <string name="busca_cpf">Digite Seu CPF:</string>
     <string name="busca_curso">Selecione Seu Curso:</string>
     <string name="btn_busca">Buscar</string>
     <string name="btn_voltar">Voltar</string>

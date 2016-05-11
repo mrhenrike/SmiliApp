@@ -17,20 +17,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/busca_nome"
+        android:text="@string/busca_cpf"
         android:id="@+id/textView"
-        android:layout_above="@+id/editTextNome"
+        android:layout_above="@+id/editTextCPF"
         android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/editTextNome"
+        android:id="@+id/editTextCPF"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:inputType="number" />
 
     <Button
         android:layout_width="wrap_content"
@@ -38,13 +38,15 @@
         android:id="@+id/btnBuscar"
         android:background="@drawable/btn_acao_acesso"
         android:text="@string/btn_busca"
-        android:layout_below="@id/editTextNome"
+        android:layout_below="@id/editTextCPF"
         android:layout_marginTop="10dp"
         android:clickable="true"
         android:enabled="true"
         android:textColor="@color/color_text_button"
         android:textSize="@dimen/textSizeButton"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:nestedScrollingEnabled="false"
+        android:onClick="cpfbanco" />
 
     <Button
         android:layout_width="wrap_content"
